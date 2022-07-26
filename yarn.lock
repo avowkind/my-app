@@ -1280,6 +1280,13 @@
   "resolved" "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz"
   "version" "1.5.1"
 
+"bb26@^2.2.0":
+  "integrity" "sha512-TTbbBbhlS0A+8UOLf7mci5ISHAQvMbVa03c+lKZenHnvHqA+HV0bNDQqvz7/u2jVMd/VNtb83xu/NrEICnvBug=="
+  "resolved" "https://registry.npmjs.org/bb26/-/bb26-2.2.0.tgz"
+  "version" "2.2.0"
+  dependencies:
+    "random-item" "^3.1.0"
+
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="
   "resolved" "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz"
@@ -2780,6 +2787,11 @@
   "integrity" "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A=="
   "resolved" "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   "version" "1.2.3"
+
+"random-item@^3.1.0":
+  "integrity" "sha512-0DyAT8LYBNQKSkqcPjia/HNoWCZ5JWBdAQWjBQVh5DMVv3Fv7V90I8/AuUf8NW4zdFn27i9qj8Kp6wI5JsiiOA=="
+  "resolved" "https://registry.npmjs.org/random-item/-/random-item-3.1.0.tgz"
+  "version" "3.1.0"
 
 "react-clientside-effect@^1.2.6":
   "integrity" "sha512-XGGGRQAKY+q25Lz9a/4EPqom7WRjz3z9R2k4jhVKA/puQFH/5Nt27vFZYql4m4NVNdUvX8PS3O7r/Zzm7cjUlg=="

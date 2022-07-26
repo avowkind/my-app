@@ -4,10 +4,10 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import clientPromise from '../lib/mongodb'
 import {SpeciesSelect} from '../components/speciesList'
-import { Box, Text} from '@chakra-ui/react'
+import { VStack, StackDivider, Text} from '@chakra-ui/react'
 import BatchCodeInput from '../components/batchCodeInput'
 import {BatchCodeFilterList, BatchCodeDetail} from '../components/batchCodeList'
-import { BatchCodeNextIndexButton } from '../components/BatchCodeNextIndex'
+import { BatchCodeButtons } from '../components/BatchCodeButtons'
 
 export default function Home({ isConnected, species, batchcodes }) {
   const [batchcodeFilter, setBatchcodeFilter] = useState(species[0]._id + "-")
@@ -32,15 +32,16 @@ export default function Home({ isConnected, species, batchcodes }) {
   }
 
   return (
-    <Box m={4}>
+    <VStack m={4} align="left"
+    >
     <SpeciesSelect species={species} defaultIndex={selectedSpeciesTab} onChange={handleSpeciesChange}/>
     <BatchCodeInput value={batchcodeFilter} onChange={handleBatchcodeInputChange}/>
 
     <BatchCodeFilterList batchcodes={batchcodes} filter={batchcodeFilter} onClick={handleBatchSelect} />
     <BatchCodeDetail batchcode={currentBatchcode} />
-    <BatchCodeNextIndexButton batchcodes={batchcodes} batch={currentBatchcode} />
+    <BatchCodeButtons batchcodes={batchcodes} batch={currentBatchcode} />
 
-    </Box>
+    </VStack>
   )
 }
 
