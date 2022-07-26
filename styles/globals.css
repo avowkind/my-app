@@ -14,3 +14,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.batchcode {
+  font-family: Roboto-mono, monospace;
+  font-size: 0.8rem;
+  color: rgb(40, 94, 41);
+  padding: 0.1rem;
+  /* margin-bottom: 0.2rem; */
+}
+
+.batchcode:hover {
+  background-color: rgb(40, 94, 41);
+  color: white;
+}

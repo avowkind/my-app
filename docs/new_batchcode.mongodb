@@ -1,0 +1,32 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// The current database to use.
+use('pfr_fish_batchcodes');
+
+row = {
+  "_id": "SNA-20130911-E-1/T3",
+  "date": "2012-02-26",
+  "entered_by": "CFNBXC",
+  "batch": "SNA-20130911-E-1",
+  "date_brood_start": "2012-02-26",
+  "date_brood_complete": "",
+  "date_brood_removed": "",
+  "date_offspring_spawned_start": "",
+  "date_offspring_spawned_end": "",
+  "origin_parents_wild_breed": "Wild",
+  "source_population_or_wild": "Wild",
+  "parent_indicator": "A",
+  "class": "Wild Old",
+  "batch_new": "SNA-20130911-E-1",
+  "batch_previous_1": "",
+  "batch_previous_2": "",
+  "change_reason_1": "New wild fish added: weigh, length",
+  "change_reason_2": "",
+  "tank_from_1": "",
+  "tank_from_2": "",
+  "tank_to": "T3"
+}
+// Search for documents in the current collection.
+db.getCollection('batchcodes').insertOne(row);
+  

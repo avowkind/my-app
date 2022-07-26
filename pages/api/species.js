@@ -3,15 +3,24 @@ import clientPromise from '../../lib/mongodb'
 const defaultSpecies = [
   {
     _id: 'SNA',
-    name: 'Snapper',
+    name: 'Snapper'
   },
   {
     _id: 'TRE',
-    name: 'Trevally',
-  },  {
+    name: 'Trevally'
+  },
+  {
     _id: 'SAL',
-    name: 'Salmon',
-  },  
+    name: 'Salmon'
+  },
+  {
+    _id: 'YBF',
+    name: 'Yellow Bellied Flounder'
+  },
+  {
+    _id: 'BCO',
+    name: 'Blue Cod'
+  }
 ]
 
 export default async function handler (req, res) {
@@ -26,12 +35,10 @@ export default async function handler (req, res) {
         await species.insertMany(defaultSpecies)
         speciesResult = await species.find().toArray()
       }
-      res.status(200).json( speciesResult )
-
+      res.status(200).json(speciesResult)
     } else {
       // Handle any other HTTP method
     }
-
   } catch (e) {
     console.error(e)
     res.status(500).json(e)
